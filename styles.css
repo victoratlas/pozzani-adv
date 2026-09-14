@@ -265,6 +265,13 @@ h1,h2,h3,p,address,blockquote,.review-person,.button,.text-link,.instagram-link,
   .floating-whatsapp>span{display:none}
 }
 @media (hover:none){.button:hover,.floating-whatsapp:hover{transform:none}}
+/* Keep document width bounded; the review ribbon owns its horizontal scrolling. */
+html,body{max-width:100%;overflow-x:hidden}
+@supports(overflow:clip){html,body{overflow-x:clip}}
+main,.site-header,.site-footer,main>section{min-width:0;max-width:100%}
+.situations-grid>*,.service-flow-heading>*,.service-steps>li,.service-steps>li>div,.faq-grid>*,.faq-list,.faq-list details,.faq-list summary{min-width:0}
+.reviews-viewport{position:relative;max-width:100%;min-width:0;contain:inline-size;overscroll-behavior-x:contain}
+.reviews-track{min-width:0}
 @media screen and (max-height:30em) and (orientation:landscape){
   .header-inner{min-height:70px}
   .hero-inner{padding-block:32px}
