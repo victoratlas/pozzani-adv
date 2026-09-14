@@ -1,0 +1,20 @@
+/* Fontes auto-hospedadas — apenas os pesos que recebemos do site original. */
+@font-face{
+  font-family:'Manrope';
+  src:url('/assets/fonts/manrope-700-normal.ttf') format('truetype');
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:'Playfair Display';
+  src:url('/assets/fonts/playfair-display-500-italic.ttf') format('truetype');
+  font-weight:500;
+  font-style:italic;
+  font-display:swap;
+}
+
+/* Fallback via Google Fonts para os pesos que ainda faltam localmente:
+   Manrope 400/500/600 e Playfair Display 500 normal (não-itálico).
+   Remova esta linha quando subir os .ttf que faltam em /assets/fonts/. */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
